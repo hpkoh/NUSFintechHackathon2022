@@ -23,6 +23,8 @@ import Contract from "components/Contract/Contract";
 import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
+import NftPage from "components/NftPage";
+import NftMainPage from "components/NftMainPage";
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -120,6 +122,12 @@ const App = ({ isServerInfo }) => {
             </Route>
             <Route path="/contract">
               <Contract />
+            </Route>
+            <Route path="/NftPage">
+              <NftPage />
+            </Route>
+            <Route path="/NftMainPage">
+              <NftMainPage />
             </Route>
             <Route path="/">
               <Redirect to="/quickstart" />
